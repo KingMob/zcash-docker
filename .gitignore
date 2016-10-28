@@ -1,4 +1,5 @@
 # Zcash files
+.lock
 blocks/
 chainstate/
 db.log
