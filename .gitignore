@@ -1,0 +1,6 @@
+# Zcash files
+blocks/
+chainstate/
+db.log
+debug.log
+*.dat
