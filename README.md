@@ -20,8 +20,9 @@ docker build -t zcash .
 # Runs the Zcash daemon and mounts the current directory to ~/.zcash to make wallet access easy
 docker run -it --name zcash -v ${PWD}:/root/.zcash zcash
 
-# To query the daemon:
-# docker exec -it zcash zcash-cli getinfo # Example of running comman-line client to query zcash daemon
+# Command-line client
+docker exec -it zcash zcash-cli getinfo # Example of running comman-line client to query zcash daemon
+docker exec -it zcash zcash-cli z_exportwallet /root/.zcash/wallet_backup.txt # Backs up your wallet
 ```
 
 ## Configuration
